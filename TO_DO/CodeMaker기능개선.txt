@@ -1,0 +1,37 @@
+1.코드생성 기능 Camel방식으로 컬럼 네임 변경
+생성 규칙을 설정하도록 propertis에서 읽어온다.
+ COL_NM    colNm  col_nm
+
+2.select문 조건문, update문 값변경 부분도 ${col_nm}으로 형태로 표시
+
+3.화면단 소스 ui 방식에 따른 소스 생성하도록
+ -Reactive에 따른 소스 생성하도록 하자.
+
+4.코드 템플릿 그룹 관리에 따른 일괄 생성
+화면(JSP,JS), 서버(JAVA, XML)
+
+5.파일업로드, 엑셀다운로드, CRUD
+
+6.명명 규칙 표준화
+-CRUD에 따른
+  get select
+  modify update
+  remove delete
+  reg         insert
+
+  Dtl 
+  List
+  Save
+  getWorkList
+  
+7.주석 달기
+
+8.소스 리팩토리
+ -소스 분할...
+
+9.todo리스트 일괄 등록/ 
+10.todo리스트 파일로 내리기
+
+11.mybatis로 변경
+
+12.mybatis - db설정 파일에서 가져오기

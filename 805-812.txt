@@ -1,0 +1,46 @@
+jdbc:oracle:thin::@10.253.42.112:1521/CPXAPP 개발 DB
+
+<property name="url" value="jdbc:oracle:thin::@10.253.42.153:1521/CPXAPP"/> 운영
+
+운영DB에서 POS데몬 설정 처리 필요...(완료)
+개발DB
+svradm1/Center1! 로 접속해서
+su root 한다음
+useradd cpadm
+passwd  cpadm
+
+cpadm/Center1!
+
+mkdir  /usr/local/src/posd
+
+chown -R 계정명/ 위치/위치
+chown -R cpadm /usr/local/src/posd
+
+사전 교환권 등록
+
+8.12
+  1)POS수정 소스 올리기
+
+(완료)
+  2)지점정보 LBS연동 AITF012
+    http://202.3.20.124/v1/cbms/branch.do
+  3)층정보 LBS연동  AITF013
+    -스타필드 지점코드 고려
+http://202.3.20.124/v1/cbms/branch.do?branch_id=13872
+  4)층정보 기준하여 LBS연동 AITF009
+    -AITF013의 맵ID인 경우만 AITF009에 남겨둔다.
+  5)AcessToken가져오기 (완료)
+8..11 시나리오 세가지 경우
+--1. 앱 실행 로그 등록시(완료)
+--2. 앱존선택
+--3. 앱동선
+8.9
+1)WELCOMEZONE판단(완료)
+
+2)로그기준 기록한다.
+
+
+3)시나리오 INBOX생성 프로시저 작성(완료)
+--스케줄러에 걸기(한시간 단위)
+
+4)탈퇴회원 영업정보에서 가져와서 회원정보  업데이트

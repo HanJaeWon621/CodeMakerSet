@@ -1,0 +1,175 @@
+<html><head><script data-x-lastpass="">(function(){var c=0;if("undefined"!==typeof CustomEvent&&"function"===typeof window.dispatchEvent){var a=function(a){try{if("object"===typeof a&&(a=JSON.stringify(a)),"string"===typeof a)return window.dispatchEvent(new CustomEvent("lprequeststart",{detail:{data:a,requestID:++c}})),c}catch(f){}},b=function(a){try{window.dispatchEvent(new CustomEvent("lprequestend",{detail:a}))}catch(f){}};"undefined"!==typeof XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.send&&(XMLHttpRequest.prototype.send=
+function(c){return function(f){var d=this,e=a(f);e&&d.addEventListener("loadend",function(){b({requestID:e,statusCode:d.status})});return c.apply(d,arguments)}}(XMLHttpRequest.prototype.send));"function"===typeof fetch&&(fetch=function(c){return function(f,d){var e=a(d),g=c.apply(this,arguments);if(e){var h=function(a){b({requestID:e,statusCode:a&&a.status})};g.then(h)["catch"](h)}return g}}(fetch))}})();
+(function(){if("undefined"!==typeof CustomEvent){var c=function(a){if(a.lpsubmit)return a;var b=function(){try{this.dispatchEvent(new CustomEvent("lpsubmit"))}catch(k){}return a.apply(this,arguments)};b.lpsubmit=!0;return b};window.addEventListener("DOMContentLoaded",function(){if(document&&document.forms&&0<document.forms.length)for(var a=0;a<document.forms.length;++a)document.forms[a].submit=c(document.forms[a].submit)},!0);document.createElement=function(a){return function(){var b=a.apply(this,
+arguments);b&&"FORM"===b.nodeName&&b.submit&&(b.submit=c(b.submit));return b}}(document.createElement)}})();
+</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ADMIN</title>
+	<script src="/js/lib/jquery.min.js" type="text/javascript"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+	<script src="/js/lib/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="/js/lib/ractive.js" type="text/javascript"></script>
+    <script src="/js/lib/common.js" type="text/javascript"></script>
+    <script src="/js/lib/file-input-button.js" type="text/javascript"></script>
+	<script src="/js/lib/async.min.js" type="text/javascript"></script>
+	<!-- Bootstrap Standard -->
+	<!--<script src="/js/lib/bootstrap.min.js" type="text/javascript"></script> -->
+	<!-- Bootstrap Colorpicker -->
+	<script src="/js/lib/bootstrap-colorpicker.min.js" type="text/javascript"></script>
+	<script src="/js/lib/cropper.min.js" type="text/javascript"></script>
+	
+	<!-- <script src="/js/lib/custom.min.js" type="text/javascript"></script> -->
+	<!-- Bootstrap Modal -->
+	<script src="/js/lib/modal.js" type="text/javascript"></script>
+    <script src="/js/3rd-party/jquery-file-upload/js/vendor/jquery.ui.widget.js" type="text/javascript"></script>
+    <script src="/js/3rd-party/jquery-file-upload/js/jquery.fileupload.js" type="text/javascript"></script>
+    <script src="/js/3rd-party/jquery-file-upload/js/jquery.iframe-transport.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui-base-1.12.0.min.css">
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Colorpicker -->
+    <link href="/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="/css/cropper.min.css" rel="stylesheet">
+    
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="/css/ie9.css" />
+	<![endif]-->
+</head>
+   
+<body><div class="container">
+	<div class="row">
+	  <div class="col-sm-12">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <div style="float:left">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/map/bcns">Home</a></li>
+      <li onclick="cal_submenu()"><a href="/map/bcns">지점관리</a></li><li onclick="cal_submenu()"><a href="/map/bcns">지도관리</a></li>
+    </ul>
+  </div>
+  <div style="float:right; margin-top:10px;">
+  <div>
+    <select class="form-control input-sm" id="sh_bcn_cd" name="sh_bcn_cd"><option value="01" selected="">스타필드-샘플(01)</option><option value="02">스타필드 고양점(02)</option><option value="03">스타필드 세번째(03)</option><option value="04">타임스퀘어(04)</option></select></div>
+  </div>
+</div>
+</nav>
+<script>
+	function cal_submenu(){
+		console("hello")
+	}
+</script>
+<form name="form">
+</form>
+</div>	
+	</div>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-10">
+		<h4>맵 관리 &gt; Floor 설정</h4>
+		</div>
+	</div>
+	<div class="row">
+	<div class="col-sm-2">
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Menu - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#menu" ).menu();
+  } );
+  </script>
+  <style>
+  .ui-menu { width: 150px; }
+  </style>
+
+<!--   
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/map/bcns">Home</a></li>
+      <li onclick="hello()"><a href="/map/bcns">지점관리</a></li>
+      <li><a href="/map/floors">층관리</a></li>
+      <li><a href="/map/floorblocks">층별블록관리</a></li>
+      <li><a href="/map/tenantpois">INFO</a></li>
+      <li><a href="/styleSets">스타일관리</a></li>
+      <li><a href="/pgMngs">시스템관리</a></li>
+    </ul>
+  </div>
+</nav>
+ -->
+<ul id="menu" role="menu" tabindex="0" class="ui-menu ui-widget ui-widget-content" aria-activedescendant="ui-id-9">
+  <li class="ui-menu-item"><div id="ui-id-4" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><strong>▼ 기본 설정</strong></div></li><li class="ui-menu-item"><div id="ui-id-3" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="/map/floors">층 관리</a></div></li><li class="ui-menu-item"><div id="ui-id-6" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="/styleSets">스타일관리</a></div></li><li class="ui-menu-item"><div id="ui-id-4" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><strong>▼ 지도 관리</strong></div></li><li class="ui-menu-item"><div id="ui-id-4" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="/map/floorblocks">층별 블록(존) 관리</a></div></li><li class="ui-menu-item"><div id="ui-id-5" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="/map/tenantpois">POI정보 관리</a></div></li><li class="ui-menu-item"><div id="ui-id-4" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><strong>▼ 배포 관리</strong></div></li>
+<li class="ui-menu-item"><div id="ui-id-5" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="#">데이터 생성</a></div></li>
+<li class="ui-menu-item"><div id="ui-id-5" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><a href="#">데이터 배포</a></div></li>
+
+  
+  <li class="ui-menu-item"><div id="ui-id-4" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">▼ 기타</div></li><li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-7" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper ui-state-active"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>시스템관리</div>
+    <ul role="menu" aria-expanded="true" class="ui-menu ui-widget ui-widget-content ui-front" style="display: block; top: 260px; left: 164px;">
+      <li class="ui-menu-item"><a href="/pgMngs" id="ui-id-8" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">프로그램관리</a></li>
+      <li class="ui-menu-item"><div id="ui-id-9" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Utilities</div></li>
+    </ul>
+  </li>
+  <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-10" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>메뉴 샘플</div>
+    <ul role="menu" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none; top: 286px; left: 164px;" aria-hidden="true">
+      <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-11" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>메뉴1</div>
+        <ul role="menu" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="top: -1px; left: 148px; display: none;" aria-hidden="true">
+          <li class="ui-menu-item"><div id="ui-id-12" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">서브메뉴1</div></li>
+          <li class="ui-menu-item"><div id="ui-id-13" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">서브메뉴2</div></li>
+        </ul>
+      </li>
+      <li class="ui-menu-item"><div aria-haspopup="true" id="ui-id-14" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper"><span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>메뉴2</div>
+        <ul role="menu" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="top: 25px; left: 148px; display: none;" aria-hidden="true">
+          <li class="ui-menu-item"><div id="ui-id-15" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">서브메뉴1</div></li>
+          <li class="ui-menu-item"><div id="ui-id-16" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">서브메뉴2</div></li>
+          <li class="ui-menu-item"><div id="ui-id-17" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">서브메뉴3</div></li>
+        </ul>
+      </li>
+      <li class="ui-menu-item"><div id="ui-id-18" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">메뉴3</div></li>
+    </ul>
+  </li>
+</ul>
+<script>
+	function hello(){
+		alert("hello")
+	}
+</script>
+</div>	
+	<div class="col-sm-10">
+		<div id="style-list"><div><table class="table table-striped"><tbody><tr><td> <div class="col-xs-3"></div> </td> <td><div class="col-xs-6 navbar-right"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">등록</button></div></td></tr></tbody></table></div> <div class="x_content"><table class="table"><thead><tr><th class="no-order">층</th> <th class="no-order">층명</th> <th class="no-order">기본블록색</th> <th class="no-order">기본블록높이</th> <th class="no-order">기초판<br>사용여부</th> <th class="no-order">기초판높이</th> <th class="no-order">기초판색</th> <th class="no-order">기초판<br>offset</th> <th class="no-order">기본블록패딩</th> <th class="no-order">기본spray스케일</th> <th>Action</th></tr></thead> <tbody><tr><td>1</td> <td>1F</td> <td class="ellipsis ta-l">0xdbd8d4</td> <td class="ellipsis ta-r">100</td> <td>N</td> <td class="ellipsis ta-r">20</td> <td class="ellipsis ta-l">0xDEDCC3</td> <td class="ellipsis ta-r">100</td> <td class="ellipsis ta-r">15</td> <td class="ellipsis ta-r">0.6</td> <td><a data-toggle="modal" data-target="#myModal">[Edit]</a><a>[Del]</a></td></tr><tr><td>2</td> <td>2F</td> <td class="ellipsis ta-l">0xdbd8d4</td> <td class="ellipsis ta-r">100</td> <td>N</td> <td class="ellipsis ta-r">20</td> <td class="ellipsis ta-l">0xDEDCC3</td> <td class="ellipsis ta-r">100</td> <td class="ellipsis ta-r">15</td> <td class="ellipsis ta-r">0.6</td> <td><a data-toggle="modal" data-target="#myModal">[Edit]</a><a>[Del]</a></td></tr><tr><td>3</td> <td>3F</td> <td class="ellipsis ta-l">0xdbd8d4</td> <td class="ellipsis ta-r">10</td> <td>N</td> <td class="ellipsis ta-r">1</td> <td class="ellipsis ta-l">0xDEDCC3</td> <td class="ellipsis ta-r">100</td> <td class="ellipsis ta-r">2</td> <td class="ellipsis ta-r">3</td> <td><a data-toggle="modal" data-target="#myModal">[Edit]</a><a>[Del]</a></td></tr></tbody></table></div> <div class=" col-md-12 col-xs-12 dataTables_paginate paging_simple_numbers" style="text-align: center;display: inline-block;"><ul class="pagination pagination-sm"><li class="disabled"><a>PREV</a></li> <li class="active"><a>1</a></li> <li class="disabled"><a>NEXT</a></li></ul></div></div>
+	
+	
+	<div id="myModal" class="modal fade" role="dialog">
+  		<div class="modal-dialog">
+
+    	<!-- Modal content-->
+    	<div class="modal-content">
+	      	<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">×</button>
+	        <h4 class="modal-title" id="formtitl">Modal Header</h4>
+	      	</div>
+	      	<div class="modal-body">
+	        <p><!--등록폼 style="text-align: center; <label class="control-label col-md-1 col-sm-1 col-xs-1 right">층</label>"-->
+				</p><div id="style-dtl" class="contents"><div id="ex1" name="tnt-reg-popup2" class="popup-wrap"><input class="text-input" id="fl_seq" name="fl_seq" type="hidden" value=""> <input class="text-input" id="bcn_cd" name="bcn_cd" type="hidden" value=""> <div class="col-md-12 col-sm-12 col-xs-12"><div class="x_panel"><div class="x_content  well"><br> <form class="form-horizontal form-label-left"><div class="form-group"><label class=" control-label col-md-5 col-sm-5 col-xs-5">층</label> <div class="col-md-2 col-sm-2 col-xs-2"><input type="text" class="form-control" name="fl" id="fl" value=""></div></div> <div class="form-group"><label class="control-label col-md-5 col-sm-5 col-xs-5">층명</label> <div class="col-md-2 col-sm-2 col-xs-2"><input type="text" class="form-control" name="fl_nm" id="fl_nm" value=""></div></div> <div class="form-group"><label class="control-label col-md-5 col-sm-5 col-xs-5">기본블럭색</label> <div class="col-md-2 col-sm-2 col-xs-2"><input type="text" class="form-control" name="dft_block_clr" id="dft_block_clr" value=""></div></div> <div class="form-group"><label class="control-label col-md-5 col-sm-5 col-xs-5">기본블럭높이</label> <div class="col-md-2 col-sm-2 col-xs-2"><input type="text" class="form-control" name="dft_block_hgt" id="dft_block_hgt" value=""></div></div> <div class="form-group"><label class="control-label col-md-5 col-sm-5 col-xs-5">기초판사용여부</label> <div class="col-md-2 col-sm-2 col-xs-2"><input type="text" class="form-control" name="base_plate_yn" id="base_plate_yn" value=""></div></div> <div class="form-group"><label class="control-label col-md-5 col-sm-5 col-xs-5">기초판높이</label> <div class="col-md-2 col-sm-2 col-xs-2"><input type="text" class="form-control" name="bs_plate_hgt" id="bs_plate_hgt" value=""></div></div> <div class="form-group"><label class="control-label col-md-5 col-sm-5 col-xs-5">기초판색</label> <div class="col-md-2 col-sm-2 col-xs-2"><input type="text" class="form-control" name="bs_plate_clr" id="bs_plate_clr" value=""></div></div> <div class="form-group"><label class="control-label col-md-5 col-sm-5 col-xs-5">기초판Offset</label> <div class="col-md-2 col-sm-2 col-xs-2"><input type="text" class="form-control" name="bs_plate_oft" id="bs_plate_oft" value=""></div></div> <div class="form-group"><label class="control-label col-md-5 col-sm-5 col-xs-5">기본블럭Padding</label> <div class="col-md-2 col-sm-2 col-xs-2"><input type="text" class="form-control" name="dft_block_pdg" id="dft_block_pdg" value=""></div></div> <div class="form-group"><label class="control-label col-md-5 col-sm-5 col-xs-5">기본Spray스케일</label> <div class="col-md-2 col-sm-2 col-xs-2"><input type="text" class="form-control" name="dft_spray_sle" id="dft_spray_sle" value=""></div></div> <div class="form-group"><label class="control-label col-md-5 col-sm-5 col-xs-5"></label> <div class="col-md-5 col-sm-5 col-xs-5"><button type="button" data-dismiss="modal" class="btn btn-success">닫기</button> <button type="button" class="btn btn-success" data-dismiss="modal">저장</button></div></div> <div class="ln_solid"></div></form></div></div></div></div></div><p></p>
+	      	</div>
+	      	<div class="modal-footer">
+	        
+	      </div>
+	    </div>
+	
+	  </div>
+	</div>
+	<!-- 모달끝 -->
+</div>
+	<script src="/js/app/map/Floor.js" type="text/javascript"></script>
+
+
+</div></div><script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script></body></html>

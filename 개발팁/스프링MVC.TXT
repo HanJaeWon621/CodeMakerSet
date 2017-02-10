@@ -1,0 +1,16 @@
+웹 애플리케이션 제작을 위한 스프링 MVC
+-어플에서도 스프링 사용가능
+
+client ->DispatcherServlet <->Controller
+
+HandlerMapping <-------DispatcherServlet--------->HandlerAdapter
+
+View(JSP) <-------DispatcherServlet--------->ViewResolver
+
+HandlerMapping HandlerAdapter ViewResolver는 스프링에서 자동으로 처리해준다.
+
+스프링 MVC 구조 살표보기
+-스프링 MVC의 구조만 잘 정리를 해도 스프링 MVC의 반 이상을 학습한 거라 생각하셔도 좋습니다. 그만큼 중요
+
+프로젝트 패키지 구조는 2개이상  com.javalect.pjtNm
+pjtNm이 자동으로 프로젝트명으로 들어간다.

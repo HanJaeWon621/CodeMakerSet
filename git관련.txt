@@ -1,0 +1,38 @@
+git 클라이언트설치
+git 저장소 설치 git
+
+git init 처음 셋팅
+git remote add origin https://github.com/HanJaeWon621/test.git
+git config --global user.email "hjw8393@naver.com
+git config --global user.name "HanJaeWon621"
+
+git add README.md 특정 파일
+git add . 전체
+
+git commit -m "first commit"
+git push -u origin master
+
+commit은 버전을 만드는 행위
+
+브런치생성 
+git checkout -b beta
+git branch
+
+git add .
+git push -u origin beta
+
+브런치간 머지
+
+git checkout master
+git branch
+git merge beta     beta에 있는 파일을 master branch로 병합
+
+index, staging area
+working copy
+working copy에서 index로 옮기는 것을 add
+
+변경된 파일들 중에서 버전업하고 싶은 파일만 선택해서 commit
+repository 저장소
+github
+gitlab
+yobi

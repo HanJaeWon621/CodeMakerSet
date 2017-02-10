@@ -1,0 +1,20 @@
+3 .todo list 프로그램 만들기
+   TO_DO순번        TO_DO_SEQ
+-시스템코드        SYS_CD
+   작업분류코드  WORK_CLS_CD
+   작업코드 	WORK_CD
+    작업명 	WORK_NM
+    작업시작일     WORK_STRT_DT
+    작업종료일      WORK_END_DT
+     작업상세    WORK_DTL
+     작업이슈  	 WORK_ISSUE
+     관련프로그램순번 REL_PG_SEQ
+     우선순위(1,2,3) PRIORITY riority
+      난이도(상중하) DIFFICULTY
+
+Diagram
+
+-History관리
+ -엑셀 다운로드
+ -엑셀업로드
+ -달력 부트스트랩 이용

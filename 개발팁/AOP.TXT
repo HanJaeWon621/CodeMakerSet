@@ -1,0 +1,30 @@
+AOP란 핵심기능에 공통기능을 끼워넣기 위함
+예)로그 기능(실행시간)
+예)동작체크
+예)인터셉터(로그인 화면 이동처리)
+예)Exception발생시 페이지 이동
+1.xml을 이용한 설정
+ around before after-returning after-throwing after
+after-throwing:핵심 메소드에서 exception발생했을때 처리
+ <aop:config>
+    <aop:aspect id="logger" ref="logAop">
+      <aop:pointcut id="publicM" expression="within(com.javalec.ex.8)" />
+      <aop:around pointcut-ref="publicM" method="loggerAop" />		
+   </aop:aspect>
+ </aopo:config>
+2.JAVA를 이용한 설정
+ -간편함
+
+@Aspect
+JAVA파일 상단에 지정
+@Pointcut("within(com.javavalec.ex.*)")
+범위 지정
+@Around("pointcutMethod()")
+ 핵심 코드가 실행되기 전후에 한번씩 실행됨
+@Before("within(com.javalec.ex.*)")
+핵심 메소드가 실행되기전 한번 실행됨
+XML에서 설정
+<aop:aspect-autoproxy />
+
+POM.xml 의존성 설정
+-AOP라이브러리

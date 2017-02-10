@@ -1,0 +1,14 @@
+-Environment객체
+  Context -> Environment ->PropertySources
+  ctx.getEnvironment()
+  env.getPropertySources()
+프로퍼티 추가 및 추출
+ 추가: propertySources.addLast()
+ 추출 : env.getProperty()
+
+-프로퍼티 파일을 이용한 설정
+ 스프링 설정 XML파일에 프로퍼티 파일을 명시합니다.
+ 스프링 설정 JAVA파일에 프로퍼티 파일을 명시합니다.
+ 
+<context:property-placeholder location="/WEB-INF/conf/*.properties"/> 외부에 있는 파일들을 가져오기 위한 설정
+-프로파일(profile) 속성을 이용한 설정

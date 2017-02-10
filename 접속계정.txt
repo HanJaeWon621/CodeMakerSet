@@ -1,0 +1,21 @@
+접속계정
+suser/mccenter!05
+루트변경
+su -
+ROOT_sktpcloud4$
+s
+--
+
+mysql 루트 계정 비밀번호  : mysql_2016
+
+-bash: mysql: command not found
+
+
+mysqld_safe 위치 변경
+
+mysqld_safe The file /usr/local/mysql/bin/mysqld does not exist or is not executable
+
+./mysql -u root -p;
+mysql 루트 계정 비밀번호  : mysql_2016
+
+dbacm 비밀번호 angel*1218

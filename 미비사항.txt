@@ -1,0 +1,13 @@
+운영DB에서 POS데몬 설정 처리 필요...
+개발DB
+svradm1/Center1! 로 접속해서
+su root 한다음
+useradd cpadm
+passwd  cpadm
+
+cpadm/Center1!
+
+mkdir  /usr/local/src/posd
+
+chown -R 계정명/ 위치/위치
+chown -R cpadm /usr/local/src/posd

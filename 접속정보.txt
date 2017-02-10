@@ -1,0 +1,23 @@
+영업정보(개발)
+jdbc.sale.driver=oracle.jdbc.driver.OracleDriver
+jdbc.sale.url=jdbc:oracle:thin::@10.253.21.42:1521/CPLEXENT
+jdbc.sale.username=IFMOB
+jdbc.sale.password=IFMOB
+
+영업정보(운영)
+jdbc.sale.driver=oracle.jdbc.driver.OracleDriver
+jdbc.sale.url=jdbc:oracle:thin::@10.253.42.109:1521/CPLEXENT
+jdbc.sale.username=IFMOB
+jdbc.sale.password=IFMOB
+
+LBS정보는 프로퍼티로 뺀다(IP, 계정)
+URL : http://112.217.207.164:20080/
+계정정보
+ID: hanam_starfield_bm
+PW: starfield
+
+스테이징
+URL : http://202.3.20.124/admin/login.do
+계정정보
+ID : hanam_bm_1
+PW : qwer!23$
