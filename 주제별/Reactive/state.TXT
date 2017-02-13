@@ -3,4 +3,4 @@ Reactive.js 컴포넌의 또 다른 핵심개념
 JSX내부에 {this.state.stateName}
 초기값 설정이 필수,생성자에서 this.state={}으로 설정
 값을 수정할때에는 this.setStete({}),렌더링된 다음엔
-this.state = 절대 사용하지 말것  
+this.state = 절대 사용하지 말것

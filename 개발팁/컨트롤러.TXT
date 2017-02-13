@@ -1,0 +1,18 @@
+컨트롤러 클래스 제작
+-최초 클라이언트는 요청이 들어왔을때 컨트롤러로 진입하게 됩니다.
+그리고 컨트롤러는 요청에 대한 작업을 한 후 뷰 쪽으로 데이터를 전달합니다.
+-제작순서
+ @Controller를 이용한 클래스 생성
+ @RequestMapping을 이용한 요청 경로 지정
+ 요청 처리 메소드 구현
+ 뷰 이름 리턴
+
+요청처리 메소드제작
+뷰에 데이터 전달
+   Model객체 이용
+   메소드의 파라미터에 건네받은 Model객체를 이용해서 view에 데이터를 건넨다.
+   ModelAndView 클래스를 이용
+    ModelAndView mv = new ModelAndView();
+    mv.addObject("id",30);
+    mv.setViewName("board/reply");
+클래스에 @RequestMapping적용

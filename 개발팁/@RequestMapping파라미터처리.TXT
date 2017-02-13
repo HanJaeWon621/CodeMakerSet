@@ -1,0 +1,7 @@
+-Get방식과 Post방식
+-@ModelAttribute
+   커맨드 객에의 이름을 개발자가 변경할 수 있습니다.
+-리다이렉트(redirec:) 키워드
+  다른 페이지로 이동할 때 사용
+  return "redirect:studentMg"
+  예) 회원 인증

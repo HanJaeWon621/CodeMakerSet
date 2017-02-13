@@ -1,1 +1,14 @@
-메모
+
+
+파라미터 #{bcn_seq}을 감싸기
+bcnSeq <-> bcn_seq선택
+
+
+
+
+
+
+crud문 통합
+makeCRUD
+selectMake //Select문
+insertMake //Insert문 생성
